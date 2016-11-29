@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="./jquery-3.1.1.min.js">
+</script>
+<script>
+$(document).ready(function(){
+	$("#a1").click(function(){
+			$("p").hide();
+			$(".test").show();
+			$("#pa").show();
+	});
+	$("#a2").click(function(){
+		$(".test").hide();
+			
+	});
+	$("#a3").click(function(){
+		$("#pa").hide();
+	});
+	});
+</script>
+</head>
+<body>
+<h2>Web Programming</h2>
+<p>Hide paragraph 1</p>
+<p class="test">Hide paragraph 2</p>
+<p id="pa">Hide paragraph 3</p>
+<button id="a1">Hide p1</button>
+<button id="a2">Hide p2</button>
+<button id="a3">Hide p3</button>
+</body>
+</html>
